@@ -1,11 +1,8 @@
-const name = "Elyor";
-function displayWowMessage(){
-    return "Wow";
-}
-function Hello(){
+
+function Hello(props){
+    console.log(props);
     return <div>
-        <h1>Hello from A component! {name}</h1>
-        <h2>{displayWowMessage()}</h2>
+        <h1>{props.message} {props.name}</h1>
     </div>
 }
 export default Hello;
