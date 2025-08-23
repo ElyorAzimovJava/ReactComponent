@@ -1,10 +1,10 @@
 import Hello from "./component/Hello.jsx"
-import Fruit from "./component/Fruit.jsx"
+import Fruits from "./component/Fruits.tsx"
 
 function App() {
 
   return <div className="App">
-     <Fruit/>
+     <Fruits/>
   </div>
 }
 
