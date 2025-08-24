@@ -15,7 +15,7 @@ export default function Fruits() {
         <div>
      <ul>
          {fruits.map(fruit => (
-             fruit.price > 200 ? <Fruit  key = {fruit.name} fruit={fruit} />:""
+            <Fruit  key = {fruit.name} fruit={fruit} />
          ))}
      </ul>
         </div>
