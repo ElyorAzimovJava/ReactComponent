@@ -1,6 +1,6 @@
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import HomePage from "./pages/HomePage.jsx";
+import {HomePage} from "./pages/HomePage.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import {Nav} from "./pages/Nav.jsx";
