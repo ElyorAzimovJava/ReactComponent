@@ -1,9 +1,9 @@
 import {useContext, useState} from "react";
-import {userContext} from "../App.jsx";
+import {UserContext} from "../context/UserContext.jsx";
 
 export default function Login(){
     const [value, setValue] = useState("");
-    const {user, setUser} = useContext(userContext);
+    const {user, setUser} = useContext(UserContext);
     function handleSubmit(e){
         e.preventDefault();
         setUser(value);

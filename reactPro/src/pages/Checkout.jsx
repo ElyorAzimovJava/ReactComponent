@@ -1,8 +1,8 @@
 import {useContext} from "react";
-import {userContext} from "../App.jsx";
+import {UserContext} from "../context/UserContext.jsx";
 
 export default function Checkout(){
-    const {user} = useContext(userContext);
+    const {user} = useContext(UserContext);
     return(
         <div>
             Checkout {user}
