@@ -1,6 +1,7 @@
 import Checkout from "./pages/Checkout.jsx";
 import Login from "./pages/Login.jsx";
 import {UserProvider} from "./context/UserContext.jsx";
+import Logout from "./pages/Logout.jsx";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <UserProvider>
         <Login/>
         <Checkout/>
+        <Logout/>
     </UserProvider>
 
       </div>
