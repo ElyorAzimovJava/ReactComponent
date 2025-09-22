@@ -4,18 +4,18 @@ import {createContext} from "react";
 const UserContext = createContext();
 function userReducer(state, action){
     if(action.type == "login"){
-        return action.payload;
+        return {...state, user: action.payload}
     }
     if(action.type == "logout"){
-        return action.payload;
+        return {...state, user: action.payload}
     }
 }
 function UserProvider({children}){
-    const [user, dispatch] = useReducer(userReducer, "");
+    const [state, dispatch] = useReducer(userReducer, {user: null});
 
     return (
         <div>
-            <UserContext value = {{user, dispatch}} >
+            <UserContext value = {{...state, dispatch}} >
                 {children}
             </UserContext>
         </div>

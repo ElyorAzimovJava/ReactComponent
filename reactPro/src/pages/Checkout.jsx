@@ -5,7 +5,7 @@ export default function Checkout(){
     const {user} = useContext(UserContext);
     return(
         <div>
-            Checkout {user}
+            Checkout as {user}
         </div>
     )
 }
