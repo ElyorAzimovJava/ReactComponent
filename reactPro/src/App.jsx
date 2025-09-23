@@ -6,11 +6,10 @@ import useDisplayMessage from "./hooks/useDisplayMessage.js";
 
 
 function App() {
-    const [message, displayMessage] = useDisplayMessage();
-    displayMessage();
+
   return (
    <div>
-       Message  is {message}
+       <Login/>
    </div>
   )
 }
